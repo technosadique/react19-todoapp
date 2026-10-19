@@ -36,3 +36,139 @@
     transform: rotate(360deg);
   }
 }
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  background: #ffffff;
+  color: #0f172a;
+}
+
+
+
+
+
+
+
+
+
+.app {
+  max-width: 560px;
+  margin: 0 auto;
+  padding: 32px 16px;
+}
+
+.title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0 0 24px;
+}
+
+.card {
+  background: #f1f5f9;
+  border-radius: 10px;
+  padding: 24px;
+}
+
+/* Input + Add button */
+.input-row {
+  display: flex;
+}
+
+
+
+
+.todo-input {
+  flex: 1;
+  padding: 12px 14px;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  background: #ffffff;
+  border-radius: 6px 0 0 6px;
+}
+
+.todo-input::placeholder {
+  color: #94a3b8;
+}
+
+.todo-input:focus {
+  box-shadow: inset 0 0 0 2px #0f172a;
+}
+
+.add-btn {
+  padding: 12px 20px;
+  font-size: 1rem;
+  color: #ffffff;
+  background: #0f172a;
+  border: none;
+  border-radius: 0 6px 6px 0;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.add-btn:hover {
+  background: #334155;
+}
+
+/* List */
+.todo-list {
+  list-style: none;
+  margin: 24px 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 14px;
+  background: #ffffff;
+  border: 1px solid #94a3b8;
+  border-radius: 6px;
+}
+
+.todo-text {
+  word-break: break-word;
+}
+
+/* Delete button */
+.delete-btn {
+  padding: 6px 12px;
+  font-size: 0.85rem;
+  color: #dc2626;
+  background: transparent;
+  border: 1px solid #dc2626;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.edit-btn {
+  padding: 6px 12px;
+  font-size: 0.85rem;
+  color: #0f172a;
+  background: transparent;
+  border: 1px solid #0f172a;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s; 
+}
+
+.edit-btn:hover {
+  background: #0f172a;
+  color: #ffffff;
+}
+
+.delete-btn:hover {
+  background: #dc2626;
+  color: #ffffff;
+}
